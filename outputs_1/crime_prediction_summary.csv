@@ -1,0 +1,31 @@
+Area,Crime Type,R² Score,MSE
+Central,Property Crimes,0.71,15359.99
+Central,Other Crimes,0.4,2924.21
+Central,Crimes against Persons,0.36,454.35
+Pacific,Property Crimes,0.32,11852.48
+Pacific,Other Crimes,0.56,1057.77
+Pacific,Crimes against Persons,0.06,290.18
+Southwest,Property Crimes,-0.26,7158.52
+Southwest,Other Crimes,0.69,2658.33
+Southwest,Crimes against Persons,0.43,1007.03
+77th Street,Property Crimes,-7.92,3385.33
+77th Street,Crimes against Persons,0.71,1193.53
+77th Street,Other Crimes,0.65,1547.8
+N Hollywood,Property Crimes,0.83,3307.8
+N Hollywood,Other Crimes,0.83,825.05
+N Hollywood,Crimes against Persons,0.85,140.73
+Wilshire,Property Crimes,0.81,7323.19
+Wilshire,Other Crimes,-0.04,1293.54
+Wilshire,Crimes against Persons,0.89,120.89
+Hollywood,Property Crimes,0.5,3256.47
+Hollywood,Other Crimes,-0.01,1103.98
+Hollywood,Crimes against Persons,0.68,249.18
+Olympic,Property Crimes,0.37,2787.68
+Olympic,Other Crimes,0.07,1140.9
+Olympic,Crimes against Persons,0.42,744.8
+Newton,Property Crimes,-0.55,3941.58
+Newton,Other Crimes,0.16,972.68
+Newton,Crimes against Persons,-1.73,1770.44
+Rampart,Property Crimes,0.82,1772.15
+Rampart,Other Crimes,0.79,637.67
+Rampart,Crimes against Persons,0.54,467.87
