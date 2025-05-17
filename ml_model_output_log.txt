@@ -1,0 +1,623 @@
+C:\Users\jeets\AppData\Local\Microsoft\WindowsApps\python3.13.exe "C:\Users\jeets\OneDrive\Desktop\a_UOP\SEM 2\MSBA 250\new_la_content\ml_modeling.py"
+✅ Loaded dataset with shape: (360218, 32)
+✅ Split complete: Train shape: (288174, 20), Test shape: (72044, 20)
+✅ Base model training complete.
+
+Classification Report (Base Model):
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+                             precision    recall  f1-score   support
+
+     Crimes against Persons       0.78      0.96      0.86     15342
+Crimes against Public Order       0.00      0.00      0.00         3
+               Other Crimes       0.77      0.58      0.66     19498
+            Property Crimes       0.85      0.88      0.87     37201
+
+                   accuracy                           0.82     72044
+                  macro avg       0.60      0.61      0.60     72044
+               weighted avg       0.82      0.82      0.81     72044
+
+
+Confusion Matrix (Base Model):
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+[[14760     0   282   300]
+ [    1     0     2     0]
+ [ 2816     0 11258  5424]
+ [ 1269     0  3011 32921]]
+
+🔍 Starting Grid Search...
+Fitting 5 folds for each of 81 candidates, totalling 405 fits
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=13.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=17.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=18.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=18.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=18.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=18.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=13.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=32.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=33.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=33.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=33.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=33.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=36.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=36.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=36.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=37.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=37.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=28.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=28.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=28.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=28.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=18.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=18.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=18.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=18.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=18.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=28.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=56.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=56.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=57.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=57.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=57.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=66.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=66.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=67.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=67.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=67.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time=15.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time=15.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time=15.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time=15.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time=15.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=36.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=36.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=43.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=35.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=34.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=35.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=31.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=31.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=12.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=13.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=32.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=33.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=33.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=12.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=101.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=26.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=54.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=12.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=26.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=102.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=102.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=102.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=26.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=102.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=53.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=53.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=26.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=53.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=53.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=11.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time=12.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time=12.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time=12.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time=12.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time=12.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=50.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=50.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=51.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=51.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=51.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=26.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=26.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=41.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=26.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=26.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=26.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=42.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=27.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time=13.6min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time=14.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=27.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=27.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time=12.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=27.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 1.8min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=27.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 1.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 1.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 3.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 3.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 3.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 3.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 3.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=39.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=39.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=39.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=39.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=39.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 1.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 1.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 1.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 3.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 3.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 3.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 3.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 1.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 3.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 3.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=40.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=25.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.5min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=41.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.5min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.6min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=42.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=42.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 6.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=42.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 6.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 6.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 6.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 6.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 2.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time= 6.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time= 4.2min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time= 4.3min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 5.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.0min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time= 6.1min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.8min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.9min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.4min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=10, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time= 5.7min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=39.4min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=39.0min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=39.3min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=39.2min
+[CV] END classifier__max_depth=None, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=39.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=10.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=10.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=10.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=10.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=100; total time=10.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=14.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=14.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=14.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=14.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=100; total time=15.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=10.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=10.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=10.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=10.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=100; total time=10.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=22.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=22.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=200; total time=22.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=28.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=29.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=29.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=29.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=200; total time=29.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=18.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=18.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=18.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=18.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=200; total time=18.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 9.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 9.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 9.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 9.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=100; total time=10.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=31.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=32.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=31.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=32.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=5, classifier__n_estimators=300; total time=32.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=26.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=27.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 9.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 9.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 9.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=41.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=42.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 9.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=26.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=42.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=42.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=27.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 9.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=2, classifier__n_estimators=300; total time=42.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=19.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=19.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=1, classifier__min_samples_split=10, classifier__n_estimators=300; total time=26.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=20.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=20.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=200; total time=20.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 9.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 9.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 9.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=20.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time= 9.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=200; total time=21.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=10.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=10.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=10.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=100; total time=10.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=32.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=33.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=20.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=20.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=20.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=20.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=200; total time=20.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=33.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=33.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=2, classifier__n_estimators=300; total time=33.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 8.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 8.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=31.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=32.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=19.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 8.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=19.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 8.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=100; total time= 8.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=31.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=28.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=31.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=5, classifier__n_estimators=300; total time=32.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=18.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=18.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=28.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=28.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=200; total time=18.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=29.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=2, classifier__min_samples_split=10, classifier__n_estimators=300; total time=29.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 9.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=100; total time= 8.8min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=17.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=17.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=17.5min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=17.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=200; total time=17.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=26.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=26.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=25.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=25.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=2, classifier__n_estimators=300; total time=24.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=15.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=14.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=14.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=14.3min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=200; total time=14.4min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=23.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=22.7min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=20.0min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=20.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=5, classifier__n_estimators=300; total time=19.9min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=17.6min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=17.2min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=17.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=17.1min
+[CV] END classifier__max_depth=20, classifier__min_samples_leaf=4, classifier__min_samples_split=10, classifier__n_estimators=300; total time=16.4min
+✅ Grid Search complete.
+✅ Best Parameters: {'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__min_samples_split': 10, 'classifier__n_estimators': 300}
+✅ Best Cross-Validated Score: 0.6036667581163113
+
+Classification Report (Tuned Best Model):
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted sam   ples. Use `zero_division` parameter to control this behavior.
+
+C:\Users\jeets\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning:
+
+Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+
+                             precision    recall  f1-score   support
+
+     Crimes against Persons       0.78      0.98      0.87     15342
+Crimes against Public Order       0.00      0.00      0.00         3
+               Other Crimes       0.80      0.58      0.67     19498
+            Property Crimes       0.86      0.89      0.87     37201
+
+                   accuracy                           0.82     72044
+                  macro avg       0.61      0.61      0.60     72044
+               weighted avg       0.82      0.82      0.82     72044
+
+
+Confusion Matrix (Tuned Best Model):
+[[15019     0    82   241]
+ [    1     0     2     0]
+ [ 2915     0 11331  5252]
+ [ 1336     0  2823 33042]]
+
+
+🔍 Analyzing Popular Crime Locations and Predicting Crime Types...
+
+✅ Top 10 Locations by Crime Frequency:
+      Area_Name  Crime_Count
+1       Central        27184
+12      Pacific        21961
+15    Southwest        21496
+0   77th Street        20735
+8   N Hollywood        18807
+20     Wilshire        18020
+6     Hollywood        17601
+11      Olympic        17528
+9        Newton        17327
+13      Rampart        17132
+
+🔍 Analyzing Crime Types in Popular Locations...
+
+🔍 Analyzing Central...
+Top Crime Types in Central:
+                    Crime_Type  Count  Percentage
+0              Property Crimes  13672   50.294291
+1                 Other Crimes   7637   28.093732
+2       Crimes against Persons   5874   21.608299
+3  Crimes against Public Order      1    0.003679
+
+🔍 Analyzing Pacific...
+Top Crime Types in Pacific:
+               Crime_Type  Count  Percentage
+0         Property Crimes  13764   62.674742
+1            Other Crimes   5330   24.270297
+2  Crimes against Persons   2867   13.054961
+
+🔍 Analyzing Southwest...
+Top Crime Types in Southwest:
+                    Crime_Type  Count  Percentage
+0              Property Crimes   9202   42.807964
+1                 Other Crimes   7320   34.052847
+2       Crimes against Persons   4973   23.134537
+3  Crimes against Public Order      1    0.004652
+
+🔍 Analyzing 77th Street...
+Top Crime Types in 77th Street:
+               Crime_Type  Count  Percentage
+0         Property Crimes   7346   35.428020
+1  Crimes against Persons   6948   33.508560
+2            Other Crimes   6441   31.063419
+
+🔍 Analyzing N Hollywood...
+Top Crime Types in N Hollywood:
+               Crime_Type  Count  Percentage
+0         Property Crimes  10504   55.851545
+1            Other Crimes   4976   26.458234
+2  Crimes against Persons   3327   17.690222
+
+🔍 Analyzing Wilshire...
+Top Crime Types in Wilshire:
+                    Crime_Type  Count  Percentage
+0              Property Crimes  11367   63.079911
+1                 Other Crimes   3897   21.625971
+2       Crimes against Persons   2755   15.288568
+3  Crimes against Public Order      1    0.005549
+
+🔍 Analyzing Hollywood...
+Top Crime Types in Hollywood:
+                    Crime_Type  Count  Percentage
+0              Property Crimes   9406   53.440145
+1                 Other Crimes   4254   24.169081
+2       Crimes against Persons   3938   22.373729
+3  Crimes against Public Order      3    0.017044
+
+🔍 Analyzing Olympic...
+Top Crime Types in Olympic:
+               Crime_Type  Count  Percentage
+0         Property Crimes   8779   50.085577
+1            Other Crimes   4695   26.785714
+2  Crimes against Persons   4054   23.128708
+
+🔍 Analyzing Newton...
+Top Crime Types in Newton:
+               Crime_Type  Count  Percentage
+0         Property Crimes   7366   42.511687
+1            Other Crimes   5427   31.321060
+2  Crimes against Persons   4534   26.167253
+
+🔍 Analyzing Rampart...
+Top Crime Types in Rampart:
+               Crime_Type  Count  Percentage
+0         Property Crimes   7834   45.727294
+1            Other Crimes   4954   28.916647
+2  Crimes against Persons   4344   25.356059
+
+✅ Location Crime Type Analysis saved to outputs_1/location_crime_type_analysis.csv
+
+🔍 Building Predictive Models for Crime Types by Time...
+  ✅ Model for Property Crimes in Central: MSE=15359.99, R²=0.71
+  ✅ Model for Other Crimes in Central: MSE=2924.21, R²=0.40
+  ✅ Model for Crimes against Persons in Central: MSE=454.35, R²=0.36
+  ✅ Model for Property Crimes in Pacific: MSE=11852.48, R²=0.32
+  ✅ Model for Other Crimes in Pacific: MSE=1057.77, R²=0.56
+  ✅ Model for Crimes against Persons in Pacific: MSE=290.18, R²=0.06
+  ✅ Model for Property Crimes in Southwest: MSE=7158.52, R²=-0.26
+  ✅ Model for Other Crimes in Southwest: MSE=2658.33, R²=0.69
+  ✅ Model for Crimes against Persons in Southwest: MSE=1007.03, R²=0.43
+  ✅ Model for Property Crimes in 77th Street: MSE=3385.33, R²=-7.92
+  ✅ Model for Crimes against Persons in 77th Street: MSE=1193.53, R²=0.71
+  ✅ Model for Other Crimes in 77th Street: MSE=1547.80, R²=0.65
+  ✅ Model for Property Crimes in N Hollywood: MSE=3307.80, R²=0.83
+  ✅ Model for Other Crimes in N Hollywood: MSE=825.05, R²=0.83
+  ✅ Model for Crimes against Persons in N Hollywood: MSE=140.73, R²=0.85
+  ✅ Model for Property Crimes in Wilshire: MSE=7323.19, R²=0.81
+  ✅ Model for Other Crimes in Wilshire: MSE=1293.54, R²=-0.04
+  ✅ Model for Crimes against Persons in Wilshire: MSE=120.89, R²=0.89
+  ✅ Model for Property Crimes in Hollywood: MSE=3256.47, R²=0.50
+  ✅ Model for Other Crimes in Hollywood: MSE=1103.98, R²=-0.01
+  ✅ Model for Crimes against Persons in Hollywood: MSE=249.18, R²=0.68
+  ✅ Model for Property Crimes in Olympic: MSE=2787.68, R²=0.37
+  ✅ Model for Other Crimes in Olympic: MSE=1140.90, R²=0.07
+  ✅ Model for Crimes against Persons in Olympic: MSE=744.80, R²=0.42
+  ✅ Model for Property Crimes in Newton: MSE=3941.58, R²=-0.55
+  ✅ Model for Other Crimes in Newton: MSE=972.68, R²=0.16
+  ✅ Model for Crimes against Persons in Newton: MSE=1770.44, R²=-1.73
+  ✅ Model for Property Crimes in Rampart: MSE=1772.15, R²=0.82
+  ✅ Model for Other Crimes in Rampart: MSE=637.67, R²=0.79
+  ✅ Model for Crimes against Persons in Rampart: MSE=467.87, R²=0.54
+
+🔍 Creating Visualizations for Crime Predictions...
+✅ Prediction visualization for Central saved to outputs_1/crime_prediction_Central.png
+✅ Prediction visualization for Pacific saved to outputs_1/crime_prediction_Pacific.png
+✅ Prediction visualization for Southwest saved to outputs_1/crime_prediction_Southwest.png
+✅ Prediction visualization for 77th Street saved to outputs_1/crime_prediction_77th_Street.png
+✅ Prediction visualization for N Hollywood saved to outputs_1/crime_prediction_N_Hollywood.png
+✅ Prediction visualization for Wilshire saved to outputs_1/crime_prediction_Wilshire.png
+✅ Prediction visualization for Hollywood saved to outputs_1/crime_prediction_Hollywood.png
+✅ Prediction visualization for Olympic saved to outputs_1/crime_prediction_Olympic.png
+✅ Prediction visualization for Newton saved to outputs_1/crime_prediction_Newton.png
+✅ Prediction visualization for Rampart saved to outputs_1/crime_prediction_Rampart.png
+
+🔍 Creating Summary Report...
+
+✅ Crime Prediction Summary saved to outputs_1/crime_prediction_summary.csv
+
+✅ All crime prediction analysis completed and saved to outputs_1/ directory
+
+Process finished with exit code 0

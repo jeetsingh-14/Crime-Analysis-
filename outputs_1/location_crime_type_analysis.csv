@@ -1,0 +1,11 @@
+Location,Total_Crimes,Crime_Type_1,Crime_Count_1,Crime_Percent_1,Crime_Type_2,Crime_Count_2,Crime_Percent_2,Crime_Type_3,Crime_Count_3,Crime_Percent_3,Crime_Type_4,Crime_Count_4,Crime_Percent_4
+Central,27184,Property Crimes,13672,50.294290759270154,Other Crimes,7637,28.093731606827543,Crimes against Persons,5874,21.608298999411417,Crimes against Public Order,1.0,0.0036786344908769863
+Pacific,21961,Property Crimes,13764,62.67474158735941,Other Crimes,5330,24.27029734529393,Crimes against Persons,2867,13.05496106734666,,,
+Southwest,21496,Property Crimes,9202,42.80796427242278,Other Crimes,7320,34.05284704131002,Crimes against Persons,4973,23.134536657982878,Crimes against Public Order,1.0,0.004652028284331969
+77th Street,20735,Property Crimes,7346,35.42802025560646,Crimes against Persons,6948,33.50856040511213,Other Crimes,6441,31.063419339281406,,,
+N Hollywood,18807,Property Crimes,10504,55.85154463763492,Other Crimes,4976,26.458233636411975,Crimes against Persons,3327,17.690221725953105,,,
+Wilshire,18020,Property Crimes,11367,63.07991120976693,Other Crimes,3897,21.62597114317425,Crimes against Persons,2755,15.288568257491676,Crimes against Public Order,1.0,0.005549389567147614
+Hollywood,17601,Property Crimes,9406,53.44014544628146,Other Crimes,4254,24.169081302198737,Crimes against Persons,3938,22.373728765411055,Crimes against Public Order,3.0,0.01704448610874382
+Olympic,17528,Property Crimes,8779,50.08557736193519,Other Crimes,4695,26.785714285714285,Crimes against Persons,4054,23.128708352350525,,,
+Newton,17327,Property Crimes,7366,42.511686962544005,Other Crimes,5427,31.321059617937326,Crimes against Persons,4534,26.167253419518673,,,
+Rampart,17132,Property Crimes,7834,45.727293952836796,Other Crimes,4954,28.916647209899605,Crimes against Persons,4344,25.3560588372636,,,
